@@ -31,16 +31,8 @@ let info =
 		let i = 0;
 		for(i = 0; i < info.Info.length; i++)
 		{
-			//$(".info:eq("+i+")").append("<td>");
-            //$(".info:eq("+i+")").append("<br><tr><td><b>Title: </b></td><td width=50>" + info.Info[i].Title + "</td></tr>");
-            //$(".info:eq("+i+")").append("<br><tr><td><b>Info: </b></td><td width=50>" + info.Info[i].Description + "</td></tr>");
-            //$(".info:eq("+i+")").append("</table>");
-            //$(".info:eq("+i+")").append("</td>");
-            
-            //$(".info:eq("+i+")").append("<td>");
-            $(".info:eq("+i+")").append("<h2>" + info.Info[i].Title + "</h2>");
-            $(".info:eq("+i+")").append("<p>" + info.Info[i].Description + "</p>");
-            //$(".info:eq("+i+")").append("</table>");
-            //$(".info:eq("+i+")").append("</td>");
+		$(".info:eq("+i+")").append("<h2>" + info.Info[i].Title + "</h2>");
+		$(".info:eq("+i+")").append("<p>" + info.Info[i].Description + "</p>");
+           
 		}
 });
