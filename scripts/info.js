@@ -1,38 +1,11 @@
-let info = 
-		{
-            "Info" : 
-            [{
-                "Title" : "Maze Runner",
-                "Description" : "Thomas is deposited in a community of boys after his memory is erased, soon learning they're all trapped in a maze that will require him to join forces with fellow 'runners' for a shot at escape.",
-            },
-            {
-                "Title" : "Maze Runner-The Scorch Trials",
-                "Description" : "After having escaped the Maze, the Gladers now face a new set of challenges on the open roads of a desolate landscape filled with unimaginable obstacles.",
-            },
-            {
-                "Title" : "Maze Runner-Death Cure",
-                "Description" : "Young hero Thomas embarks on a mission to find a cure for a deadly disease known as 'The Flare'.",
-            },
-            {
-                "Title" : "The Giver",
-                "Description" : "In a seemingly perfect community, without war, pain, suffering, differences or choice, a young boy is chosen to learn from an elderly man about the true pain and pleasure of the 'real' world.",
-            },
-            {
-                "Title" : "Percy Jackson-The Lightening Chief",
-                "Description" : "A teenager discovers he's the descendant of a Greek god and sets out on an adventure to settle an on-going battle between the gods.",
-            },
-            {
-                "Title" : "Percy Jackson-The Sea Of Monsters",
-                "Description" : "In order to restore their dying safe haven, the son of Poseidon and his friends embark on a quest to the Sea of Monsters, to find the mythical Golden Fleece, all the while trying to stop an ancient evil from rising.",
-            }]   
-		};
+
 		
-		$(document).ready(function(){
+$(document).ready(function(){
 		let i = 0;
 		for(i = 0; i < info.Info.length; i++)
 		{
 		$(".info:eq("+i+")").append("<h2>" + info.Info[i].Title + "</h2>");
 		$(".info:eq("+i+")").append("<p>" + info.Info[i].Description + "</p>");
            
-		}
+	}
 });
